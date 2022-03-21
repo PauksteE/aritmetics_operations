@@ -1,6 +1,7 @@
 package com.company;
 
 import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class Main {
 
@@ -67,7 +68,11 @@ public class Main {
 
 
     static void percent() {
-        int number = 100;
+
+        Scanner scann = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int number = scann.nextInt();
+        //int number = 100;
         System.out.println("25 pers of number: " + (number + number * 0.25));
     }
 
